@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+  <script src="../bootstrap.bundle.js"></script>
+  <link rel="stylesheet" href="../bootstrap.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <style>
+    #banner{
+        background-color: #29406f;
+        height: 400px;
+    }
+    #h2content{
+        color: #29406f;
+    }
+    #footer{
+        background-color: #29406f;
+        height: 270px;
+    }
+  </style>
+</head>
+<body>
+<div class="container-fluid d-flex flex-column p-0" id="banner">
+  <nav class="navbar navbar-expand-lg bg-white">
+    <div class="container-fluid">
+      <a class="navbar-brand text-warning fw-bolder" href="#">Bella Cucina</a>
+
+        <ul class="navbar-nav flex-row">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Link</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Link</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Link</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Link</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Link</a>
+          </li>
+
+        </ul>
+      </div>
+  </nav>
+  <div class="my-auto text-center">
+    <h1 class="text-white fw-bolder text-center">Welcome to Bella Cucina</h1>
+    <p class="text-center text-white">Authentic Italian food.Authentic Italian food.Authentic Italian food</p>
+    <button type="button" class="btn btn-warning fw-bold">Explore Our Menu</button>
+  </div>
+</div>
+<h2 class="text-center mt-5" id="h2content">Our Signature Dishes</h2>
+<div class="container-fluid p-5 d-flex justify-content-center">
+
+  <div class="row">
+    <div class="col-4">
+      <div class="card" style="width: 18rem;">
+        <img src="pasta1.png" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Pasta Carbonara</h5>
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s content.</p>
+          <p class="text-warning fw-bold">$18.99</p>
+        </div>
+      </div>
+    </div>
+    <div class="col-4">
+      <div class="card" style="width: 18rem;">
+        <img src="pizza2.png" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Pizza</h5>
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s content.</p>
+          <p class="text-warning fw-bold">$18.99</p>
+        </div>
+      </div>
+    </div>
+    <div class="col-4">
+      <div class="card" style="width: 18rem;">
+        <img src="tiramisu3.png" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Tiramisu</h5>
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s content.</p>
+          <p class="text-warning fw-bold">$18.99</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="container-fluid text-center">
+  <img class="" src="image.png">
+  <div class="m-auto d-inline-block">
+    <h3 class="fw-bold">Our Story</h3>
+    <p class="">OurStory.OurStory.OurStory.OurStory.OurStory.OurStory.OurStory.OurStory.OurStory.</p>
+  </div>
+</div>
+<div class="container text-center" style="margin-top: 60px;">
+  <h2>Make a Reservation</h2>
+
+  <div class="row g-3 mb-3">
+    <div class="col-md-6">
+      <label for="fullName">Full Name</label>
+      <input type="text" class="form-control" id="fullName" placeholder="Your Name"/>
+    </div>
+    <div class="col-md-6">
+      <label for="email">Email</label>
+      <input type="email" class="form-control" id="email" placeholder="you@example.com"/>
+    </div>
+  </div>
+  <div class="row g-3 mb-3">
+    <div class="col-md-4">
+      <label for="date">Date</label>
+      <input type="date" class="form-control" id="date"/>
+    </div>
+    <div class="col-md-4">
+      <label for="time">Time</label>
+      <input type="time" class="form-control" id="time"/>
+    </div>
+    <div class="col-md-4">
+      <label for="guests">Number of Guests</label>
+      <select class="form-select" id="guests">
+        <option value="" disabled selected>Select...</option>
+        <option>1</option>
+        <option>2</option>
+        <option>3</option>
+        <option>4</option>
+        <option>5</option>
+        <option>6+</option>
+      </select>
+    </div>
+  </div>
+  <div class="mb-4">
+    <label for="specialRequests">Special Requests</label>
+    <textarea class="form-control" id="specialRequests" placeholder="Allergies, celebrations, seating preferences..."></textarea>
+  </div>
+  <button class="btn btn-warning fw-bold">Reserve Table</button>
+</div>
+<div class="container-fluid mt-5" id="footer">
+<div class="row">
+  <div class="col-4 mt-5">
+    <p class="fw-bolder text-warning">Bella Cucina</p>
+    <p class="text-white">Authentic Italian food.Authentic Italian food.</p>
+  </div>
+  <div class="col-4 mt-5 d-flex flex-column">
+    <p class="fw-bolder text-white">Quick Links</p>
+    <a rel="#" class="text-warning">Home</a>
+    <a rel="#" class="text-warning">Home</a>
+    <a rel="#" class="text-warning">Home</a>
+    <a rel="#" class="text-warning">Home</a>
+  </div>
+  <div class="col-4 mt-5 d-flex flex-column">
+    <p class="fw-bolder text-white">Contact Us</p>
+    <div class="d-flex"><i class="fa fa-map-marker text-white" style="font-size: 24px"></i><p class="text-white m-lg-1">Some Address</p></div>
+    <div class="d-flex"><i class="fa fa-phone text-white" style="font-size: 24px"></i><p class="text-white m-lg-1">111 222 333</p></div>
+    <div class="d-flex"><i class="fa fa-envelope-o text-white" style="font-size: 24px"></i><p class="text-white m-lg-1">info@gmail.com</p></div>
+  </div>
+  <hr>
+  <p class="text-white text-center">©	FINKI - DNICK 2026</p>
+</div>
+</div>
+</body>
+</html>
