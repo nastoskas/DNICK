@@ -1,0 +1,33 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{{app_name}}</title>
+    <link rel="stylesheet" href="{% static 'bootstrap.css' %}">
+    <script src="{% static 'bootstrap.bundle.js' %}"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            {% for bouquet in bouquet_list %}
+            <div class="card col-3">
+                <img src="{{bouquet.photo.url}}" class="card-img-top" style="height: 300px" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">{{bouquet.flower_type}}</h5>
+                    <p class="card-text">{{bouquet.arrangement}}</p>
+                    <p class="card-text">Size: {{bouquet.size}}</p>
+                    {%if bouquet.fresh%}
+                        <p class="card-text">Fresh bouquet</p>
+                    {%else%}
+                        <p class="card-text">Not fresh bouquet</p>
+                    {%endif%}
+                    <a href="{% url 'product' bouquet.id %}" class="btn btn-primary">Details</a>
+                </div>
+
+            </div>
+             {%endfor%}
+        </div>
+    </div>
+</body>
+</html>

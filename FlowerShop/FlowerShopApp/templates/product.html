@@ -1,0 +1,32 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="{% static 'bootstrap.css' %}">
+    <script src="{% static 'bootstrap.bundle.js' %}"></script>
+    <title>{{app_name}}</title>
+</head>
+<body>
+    <div class="container">
+        <h3 class="text-center">Details</h3>
+        <div class="d-flex">
+            <div>
+                <img src="{{bouquet.photo.url}}" style="height: 300px">
+            </div>
+            <div>
+                <p>Flower Type: {{bouquet.flower_type}}</p>
+                <p>Arrangement: {{bouquet.arrangement}}</p>
+                <p>Size: {{bouquet.size}}</p>
+                <p>Price: {{bouquet.price}}</p>
+                <p>Year: {{bouquet.year}}</p>
+                {%if bouquet.fresh%}
+                        <p class="card-text">Fresh: Yes</p>
+                    {%else%}
+                        <p class="card-text">Fresh: No</p>
+                    {%endif%}
+            </div>
+        </div>
+    </div>
+</body>
+</html>
